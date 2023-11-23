@@ -147,5 +147,10 @@ public class Main {
 
         System.out.printf("Total de todos os imóveis: R$ %.2f%n", totalImoveis);
         System.out.printf("Total de todos os financiamentos: R$ %.2f%n", totalFinanciamentos);
+
+        // Feedback de que os dados foram salvos
+        salvarDadosTexto(financiamentos);
+        salvarDadosSerializados(financiamentos);
+        System.out.println("Dados salvos corretamente nos arquivos.");
     }
 }
